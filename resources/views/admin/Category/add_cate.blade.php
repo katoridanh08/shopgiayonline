@@ -11,6 +11,20 @@
                 <td><input name="order_display"></td>
             </tr>
             <tr>
+                <td>parent_id</td>
+                <td><input name="parent_id"></td>
+            </tr>
+            <tr>
+                <td>slug_name</td>
+                <td><input name="slug_name"></td>
+
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td><input name="created_at"></td>
+
+            </tr>
+            <tr>
                 <td colspan="2">
                     <button type="submit" name="save">Save</button>
                     <button type="submit" name="cancel">Cancel</button>

@@ -11,6 +11,8 @@
                 <td>{{$cate->id}}</td>
                 <td>{{$cate->name}}</td>
                 <td>{{$cate->order_display}}</td>
+                <td>{{$cate->parent_id}}</td>
+                <td>{{$cate->slug_name}}</td>
             </tr>
         @endforeach
     </table>
