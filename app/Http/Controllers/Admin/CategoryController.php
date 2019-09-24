@@ -24,9 +24,9 @@ class CategoryController extends Controller
     {
 
         $cate             = new Category;
-        $cate->name       = $request->txtCateName;
+        $cate->name       = $request->name;
         $cate->parent_id  = $request->parent_id;
-        $cate->txtFullName  = $request->txtFullName;
+        $cate->order_display  = $request->order_display;
         $cate->created_at = new DateTime;
     	$cate->save();
 
