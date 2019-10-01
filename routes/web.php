@@ -22,8 +22,19 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
         Route::get("sua/{id}",['as'=>'suadanhmuc','uses'=>'CategoryController@getEditCate']);
         Route::post("sua/{id}",['as'=>'suadanhmuc','uses'=>'CategoryController@postEditCate']);
         Route::get('xoa/{id}',"CategoryController@getDelCate");
-
-
     });
-
 });
+Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
+     Route::group(['prefix'=>'san-pham'],function () {
+    Route::get("them", ['as' => 'themsanpham', 'uses' => 'ProductController@getAddProduct']);
+    Route::post("them", ['as' => 'themsanpham', 'uses' => 'ProductController@postAddProduct']);
+    Route::get("danh-sach-san-pham",['as' => 'listsanpham', 'uses' => 'ProductController@getListProduct']);
+    Route::get("sua/{id}",['as'=>'suasanpham','uses'=>'ProductController@getEditProduct']);
+    Route::post("sua/{id}",['as'=>'suasanpham','uses'=>'ProductController@postEditProduct']);
+    Route::get("xoa/{id}","ProductController@postDelProduct");
+});
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

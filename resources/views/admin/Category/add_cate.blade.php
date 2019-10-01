@@ -3,15 +3,15 @@
     <form action="" method="post">
         <table border="1">
             <tr>
-                <td>Category name</td>
+                <td>Tên đầy đủ</td>
                 <td><input name="name"></td>
             </tr>
             <tr>
-                <td>order_display</td>
+                <td>Tên Danh mục</td>
                 <td><input name="order_display"></td>
             </tr>
             <tr>
-                <td>parent_id</td>
+                <td>Danh mục cha</td>
                 <td><input name="parent_id"></td>
             </tr>
             <tr>

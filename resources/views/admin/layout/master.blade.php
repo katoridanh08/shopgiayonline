@@ -31,46 +31,46 @@
 
 <body>
 
-    <div id="wrapper">
+<div id="wrapper">
+    @include('admin.layout.header')
 
-        
-        @yield('content')
-    </div>
-    <!-- /#wrapper -->
+    @yield('content')
+</div>
+<!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="admin_asset/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="admin_asset/bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="admin_asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="admin_asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="admin_asset/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="admin_asset/bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="admin_asset/dist/js/sb-admin-2.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="admin_asset/dist/js/sb-admin-2.js"></script>
 
 
-    <!-- DataTables JavaScript -->
-    <script src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-    
-    <script src="admin_asset/ckeditor/ckeditor.js"></script>
-    <script src="admin_asset/js/myscript.js"></script>
-    <script type="text/javascript">
-       $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-    </script>
-    @yield('script')
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
+<!-- DataTables JavaScript -->
+<script src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+
+<script src="admin_asset/ckeditor/ckeditor.js"></script>
+<script src="admin_asset/js/myscript.js"></script>
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
+@yield('script')
+<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+<script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable();
     });
-    
-    </script>
+
+</script>
 </body>
 
 </html>
